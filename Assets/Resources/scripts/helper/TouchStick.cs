@@ -44,12 +44,8 @@ public class TouchStick : MonoBehaviour
         }
     }
  
-    public Vector2 position
-    {
-        get;
-        private set;
-    }
- 
+    public static Vector2 position;
+
  
     private static string joysticksTag = "joystick";
     private static List<Joystick> joysticks;
