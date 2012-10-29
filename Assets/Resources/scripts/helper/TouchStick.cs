@@ -145,8 +145,7 @@ public class TouchStick : MonoBehaviour
     }
  
  
-    public void Restart()
-    {
+    public void Restart(){
         lastFingerId = -1;
         position = Vector2.zero;
         fingerDownPos = Vector2.zero;
