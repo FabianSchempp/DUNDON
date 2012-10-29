@@ -32,21 +32,27 @@ public class Joystick : MonoBehaviour
     private Vector2 guiTouchOffset;
     private Vector2 guiCenter;
  
-    public bool isFingerDown{
-  	get{
-          return (lastFingerId != -1);
-		}
+    public bool isFingerDown
+    {
+        get
+        {
+            return (lastFingerId != -1);
+        }
     }
  
-    public int latchedFinger {
-        set{
-            if (lastFingerId == value){
+    public int latchedFinger
+    {
+        set
+        {
+            if (lastFingerId == value)
+            {
                 Restart();
             }
         }
     }
  
-    public Vector2 position{
+    public Vector2 position
+    {
         get;
         private set;
     }
