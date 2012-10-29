@@ -253,35 +253,9 @@ public class TouchStick : MonoBehaviour
  
         }
  
-        if (!touchPad)
-        {
-            position = new Vector2
-                (
-                  (gui.pixelInset.x + guiTouchOffset.x - guiCenter.x) / guiTouchOffset.x,
-                  (gui.pixelInset.y + guiTouchOffset.y - guiCenter.y) / guiTouchOffset.y
-                );
-        }
  
         float absoluteX = Mathf.Abs(position.x);
         float absoluteY = Mathf.Abs(position.y);
- 
-        if (absoluteX < deadZone.x)
-        {
-            position = new Vector2(0, position.y);
-        }
-        else if (normalize)
-        {
-            position = new Vector2(Mathf.Sign(position.x) * (absoluteX - deadZone.x) / (1 - deadZone.x), position.y);
-        }
- 
-        if (absoluteY < deadZone.y)
-        {
-            position = new Vector2(position.x, 0);
-        }
-        else if (normalize)
-        {
-            position = new Vector2(position.x, Mathf.Sign(position.y) * (absoluteY - deadZone.y) / (1 - deadZone.y));
-        }
     }
  
  
