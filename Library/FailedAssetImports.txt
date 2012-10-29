@@ -1,1 +1,1 @@
-Assets/Resources/shader/vertexColorGlowFIVE.shader
+Assets/Resources/shader/vertexColorGlowONE.shader
