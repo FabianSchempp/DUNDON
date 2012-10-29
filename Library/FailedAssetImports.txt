@@ -1,1 +1,1 @@
-Assets/Resources/models/items/knights.blend
+Assets/Resources/GUI/socket.blend
