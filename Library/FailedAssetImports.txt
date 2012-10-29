@@ -1,1 +1,1 @@
-Assets/Resources/models/character/knight/knight@attack_sword_one_handed.blend
+Assets/Resources/models/character/knight/knight@dead.blend
