@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\scripts\helper\Joystick.cs">
+    <Files>
+      <File FileName="Assets\Resources\scripts\character\ControllStateKnight.cs" Line="282" Column="4" />
+      <File FileName="Assets\Resources\scripts\camera\ControllerCamera.cs" Line="301" Column="2" />
+      <File FileName="Assets\Resources\scripts\helper\Joystick.cs" Line="23" Column="28" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

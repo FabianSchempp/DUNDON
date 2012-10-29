@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+POSES ARE:
+total
+half
+face
+-->
+<dialogs>
+	<dialog>
+		<key>skeleton_bird_inky</key>
+		<type>monolog</type>
+		<lines>
+			<line speaker="custom" 		pose = "total" type = "normal" 	jump_to_line = "1" possible_answers = "1">ARGH! ARGH!</line>
+			<line speaker="custom" 		pose = "half" type = "normal" 	jump_to_line = "-1">Gib mir schwarzes. Gib mir Tinte.</line>
+		</lines>
+		
+		<answers>
+		</answers>
+	</dialog>
+	<dialog>
+		<key>intro</key>
+		<type>dialogFreedanStayn</type>
+		<lines>
+			<line speaker="stayn_spirit" 	pose = "total" type = "question" 	jump_to_line = "2" possible_answers = "0">Wacht auf Freedan...</line>
+			<line speaker="freedan" 		pose = "half" type = "normal" 		jump_to_line = "3">Was? Wo? Wo bin ich?</line>
+			<line speaker="freedan"			pose = "face" type = "normal" 		jump_to_line = "3">Wer bist du? Was bist du?</line>
+			<line speaker="stayn_spirit" 	pose = "total" type = "normal" 		jump_to_line = "4">Wie ihr bin ich ein gefangener in den Kerkern von Tristoy</line>
+			<line speaker="freedan" 		pose = "half" type = "normal" 		jump_to_line = "5">Bist du ein Geist</line>
+			<line speaker="stayn_spirit" 	pose = "face" type = "question" 	jump_to_line = "2" possible_answers = "1">Ich bin eure einzige Hoffnung...</line>
+			<line speaker="stayn_spirit" 	pose = "total" type = "question" 	jump_to_line = "5" possible_answers = "2">Wir werden Fliehen!</line>
+			<line speaker="stayn_spirit" 	pose = "half" type = "question" 	jump_to_line = "8" possible_answers = "3">Zunächst müsst ihr mich aus meinem Kerker befreihen!</line>
+			<line speaker="stayn_spirit" 	pose = "face" type = "question" 	jump_to_line = "8" possible_answers = "4">...</line>
+			<line speaker="stayn_spirit" 	pose = "total" type = "normal" 		jump_to_line = "12">Diese Ketten sind aus sprödem Eisen.</line>
+			<line speaker="stayn_spirit" 	pose = "half" type = "normal" 		jump_to_line = "13">Diese Ketten sind aus sprödem Eisen.</line>
+			<line speaker="stayn_spirit" 	pose = "face" type = "normal" 		jump_to_line = "14">Diese Ketten sind aus sprödem Eisen.</line>
+			<line speaker="stayn_spirit" 	pose = "total" type = "normal" 		jump_to_line = "15">Glied um Glied geschmieded von den Händen der Todgeweihten</line>
+			<line speaker="stayn_spirit" 	pose = "half" type = "normal" 		jump_to_line = "16">Glied um Glied geschmieded von den Händen der Todgeweihten</line>
+			<line speaker="stayn_spirit" 	pose = "face" type = "normal" 		jump_to_line = "17">Glied um Glied geschmieded von den Händen der Todgeweihten</line>
+			<line speaker="stayn_spirit" 	pose = "total" type = "normal" 		jump_to_line = "18">die können einen kräftigen Jungen wie dich nicht aufhalten.</line>
+			<line speaker="stayn_spirit" 	pose = "half" type = "normal" 		jump_to_line = "19">die können einen kräftigen Jungen wie dich nicht aufhalten.</line>
+			<line speaker="stayn_spirit" 	pose = "face" type = "normal" 		jump_to_line = "20">die können einen kräftigen Jungen wie dich nicht aufhalten.</line>
+			<line speaker="stayn_spirit" 	pose = "total" type = "normal" 		jump_to_line = "-1">Nur Mut! Ihr schafft das!</line>
+			<line speaker="stayn_spirit" 	pose = "half" type = "normal" 		jump_to_line = "-1">Aber schnell, die Wachen könnten jederzeit zurück kommen.</line>
+			<line speaker="stayn_spirit" 	pose = "face" type = "normal" 		jump_to_line = "-1">Macht schon! oder wollt ihr hier drinnen verrotten?!</line>
+		</lines>
+		
+		<answers>
+			<answer speaker="freedan" pose = "0">
+				<good trust = "0" jump_to_line = "1">?</good>
+				<neutral trust = "0" jump_to_line = "-1"></neutral>
+				<bad trust = "0" jump_to_line = "2">???</bad>
+			</answer>
+			
+			<answer speaker="stayn_spirit" pose = "1">
+				<good trust = "2" jump_to_line = "6">vertraut mir.</good>
+				<neutral trust = "0" jump_to_line = "6">und ihr die meine.</neutral>
+				<bad trust = "-2" jump_to_line = "6">vergesst das besser nicht.</bad>
+			</answer>
+			
+			<answer speaker="freedan" pose = "1">
+				<good trust = "0" jump_to_line = "7">Wie?</good>
+				<neutral trust = "0" jump_to_line = "-1"></neutral>
+				<bad trust = "0" jump_to_line = "7">Wie stellt ihr euch das vor?</bad>
+			</answer>
+			
+			<answer speaker="freedan" pose = "2">
+				<good trust = "0" jump_to_line = "8">Wartet, wartet mal! Wie bin ich dabei von Nutzen?</good>
+				<neutral trust = "0" jump_to_line = "-1"></neutral>
+				<bad trust = "0" jump_to_line = "8">Wie soll ich euch befreien, wenn ich mich nicht einmal selbst befreien kann?</bad>
+			</answer >
+			
+			<answer speaker="stayn_spirit" pose = "4">
+				<good trust = "2" jump_to_line = "9">Habt mehr Vertrauen in euch!</good>
+				<neutral trust = "0" jump_to_line = "10">Seht euch doch um!</neutral>
+				<bad trust = "-2" jump_to_line = "11">Seid kein Narr!</bad>
+			</answer >
+		</answers>
+	</dialog>
+</dialogs>

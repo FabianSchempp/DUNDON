@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{1FD48CB3-F90A-1F59-332F-DECEFAFEF117}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_0;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_WIN;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Resources\scripts\Items\fruit.cs" />
+     <Compile Include="Assets\Resources\scripts\Items\size_bowl.cs" />
+     <Compile Include="Assets\Resources\scripts\Items\starItem.cs" />
+     <Compile Include="Assets\Resources\scripts\accountsystem\AccountData.cs" />
+     <Compile Include="Assets\Resources\scripts\accountsystem\Authenticator.cs" />
+     <Compile Include="Assets\Resources\scripts\accountsystem\MenuManager.cs" />
+     <Compile Include="Assets\Resources\scripts\accountsystem\MenuState.cs" />
+     <Compile Include="Assets\Resources\scripts\accountsystem\login.cs" />
+     <Compile Include="Assets\Resources\scripts\behaviour\BAnimationEvents.cs" />
+     <Compile Include="Assets\Resources\scripts\behaviour\BAudioPlayer.cs" />
+     <Compile Include="Assets\Resources\scripts\behaviour\BBillboard.cs" />
+     <Compile Include="Assets\Resources\scripts\behaviour\BCharacterAssambler.cs" />
+     <Compile Include="Assets\Resources\scripts\behaviour\BClearParentRotation.cs" />
+     <Compile Include="Assets\Resources\scripts\behaviour\BExplode.cs" />
+     <Compile Include="Assets\Resources\scripts\behaviour\BFlicker.cs" />
+     <Compile Include="Assets\Resources\scripts\behaviour\BFollow.cs" />
+     <Compile Include="Assets\Resources\scripts\behaviour\BKillParticlesAfterDeath.cs" />
+     <Compile Include="Assets\Resources\scripts\behaviour\BKillRigidbodyAtSleep.cs" />
+     <Compile Include="Assets\Resources\scripts\behaviour\BLookAtMe.cs" />
+     <Compile Include="Assets\Resources\scripts\behaviour\BLookAtMeWithPosition.cs" />
+     <Compile Include="Assets\Resources\scripts\behaviour\BPushAway.cs" />
+     <Compile Include="Assets\Resources\scripts\behaviour\BShake.cs" />
+     <Compile Include="Assets\Resources\scripts\behaviour\BShowHideExSpriteFont.cs" />
+     <Compile Include="Assets\Resources\scripts\behaviour\BThirdPerson.cs" />
+     <Compile Include="Assets\Resources\scripts\behaviour\BThirdPersonMotionSystem.cs" />
+     <Compile Include="Assets\Resources\scripts\behaviour\BTrail.cs" />
+     <Compile Include="Assets\Resources\scripts\behaviour\BWeapon.cs" />
+     <Compile Include="Assets\Resources\scripts\camera\CameraState.cs" />
+     <Compile Include="Assets\Resources\scripts\camera\CaravanPostFXCameras.cs" />
+     <Compile Include="Assets\Resources\scripts\camera\CaravanPostFXManager.cs" />
+     <Compile Include="Assets\Resources\scripts\camera\ControllerCamera.cs" />
+     <Compile Include="Assets\Resources\scripts\camera\OGUICamera.cs" />
+     <Compile Include="Assets\Resources\scripts\camera\TextLoader.cs" />
+     <Compile Include="Assets\Resources\scripts\character\CharacterDatabase.cs" />
+     <Compile Include="Assets\Resources\scripts\character\CharacterInventory.cs" />
+     <Compile Include="Assets\Resources\scripts\character\CharacterStats.cs" />
+     <Compile Include="Assets\Resources\scripts\character\ControllState.cs" />
+     <Compile Include="Assets\Resources\scripts\character\ControllStateCrow.cs" />
+     <Compile Include="Assets\Resources\scripts\character\ControllStateKnight.cs" />
+     <Compile Include="Assets\Resources\scripts\character\ControllStateZombie.cs" />
+     <Compile Include="Assets\Resources\scripts\character\Controller.cs" />
+     <Compile Include="Assets\Resources\scripts\character\ControllerCrow.cs" />
+     <Compile Include="Assets\Resources\scripts\character\ControllerKnight.cs" />
+     <Compile Include="Assets\Resources\scripts\character\ControllerZombie.cs" />
+     <Compile Include="Assets\Resources\scripts\character\character_audio_player.cs" />
+     <Compile Include="Assets\Resources\scripts\effects\ECustomMeshCursor.cs" />
+     <Compile Include="Assets\Resources\scripts\effects\ECustomPattern.cs" />
+     <Compile Include="Assets\Resources\scripts\effects\EFleeShader.cs" />
+     <Compile Include="Assets\Resources\scripts\effects\EFlowMapShader.cs" />
+     <Compile Include="Assets\Resources\scripts\effects\EGravePattern.cs" />
+     <Compile Include="Assets\Resources\scripts\effects\EWhiteIn.cs" />
+     <Compile Include="Assets\Resources\scripts\helper\AudioManager.cs" />
+     <Compile Include="Assets\Resources\scripts\helper\AwarenessManager.cs" />
+     <Compile Include="Assets\Resources\scripts\helper\CameraPointManager.cs" />
+     <Compile Include="Assets\Resources\scripts\helper\GUIManager.cs" />
+     <Compile Include="Assets\Resources\scripts\helper\Helper.cs" />
+     <Compile Include="Assets\Resources\scripts\helper\IK1JointAnalytic.cs" />
+     <Compile Include="Assets\Resources\scripts\helper\IKSimple.cs" />
+     <Compile Include="Assets\Resources\scripts\helper\IKSolver.cs" />
+     <Compile Include="Assets\Resources\scripts\helper\Joystick.cs" />
+     <Compile Include="Assets\Resources\scripts\helper\ParticleManager.cs" />
+     <Compile Include="Assets\Resources\scripts\helper\SpeechManager.cs" />
+     <Compile Include="Assets\Resources\scripts\helper\die.cs" />
+     <Compile Include="Assets\Resources\scripts\helper\getDeaths.cs" />
+     <Compile Include="Assets\Resources\scripts\helper\kill_particle_system.cs" />
+     <Compile Include="Assets\Resources\scripts\helper\light_manager.cs" />
+     <Compile Include="Assets\Resources\scripts\helper\rotate_skybox.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OAttentionObject.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OAttentionRadius.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OAttentionTester.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OAwareness.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OControllDisplay.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\ODirectedParticleSystem.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OEnduranceCircle.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OFireUrn.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OFruitTree.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OGrave.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OIllustratedCutscene.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OItem.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OMap.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OOasis.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\ORuneStone.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OScoreBar.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OShaderHealthbar.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OSkySign.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OSocketHealthbar.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OSparkleHint.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OSpeechBar.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OStroke.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OWeapon.cs" />
+     <Compile Include="Assets\Resources\scripts\objects\OWorldRoot.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\MirrorReflection.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\ReflectionRenderTexture.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\_map_camera.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\_mask_camera.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\_mask_camera_vertex.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\_sandstorm_camera.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\add_clouds_posteffect.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\cloud_cam.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\color_distortion.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\color_distortion_bloom.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\color_distortion_blur.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\color_distortion_dynamic_exposure.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\color_distortion_dynamic_exposure_optimized.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\color_gradeing.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\decal_cam.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\decal_camera.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\display_map.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\exposure_test_camera.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\global_shader_manager.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\ground_occlusion.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\heat_distortion.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\median_filter.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\normal_blur.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\normal_camera.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\reflection_camera.cs" />
+     <Compile Include="Assets\Resources\scripts\shader_scripts\waves_camera.cs" />
+     <Compile Include="Assets\Resources\shader\glowFIVE.cs" />
+     <Compile Include="Assets\Resources\shader\glowONE.cs" />
+     <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
+     <None Include="Assets\Resources\shader\vertexColorGlowONE.shader" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
+     <None Include="Assets\ex2D\Core\Shaders\SpriteBlendClipping.shader" />
+     <None Include="Assets\ex2D\Core\Shaders\SpriteBlendPixelPerfect.shader" />
+     <None Include="Assets\Resources\shader\vertexColorDouble.shader" />
+     <None Include="Assets\Resources\shader\vertexColorSpecial.shader" />
+     <None Include="Assets\Resources\GUI\speeches\speeches.xml" />
+     <None Include="Assets\Resources\GUI\BMFonts\kefa_bold_16.txt" />
+     <None Include="Assets\Resources\GUI\BMFonts\kefa_regular_22_speech.txt" />
+     <None Include="Assets\Resources\shader\clouds.shader" />
+     <None Include="Assets\Resources\shader\trail.shader" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Light.shader" />
+     <None Include="Assets\Resources\shader\vertexColorHeigthFog.shader" />
+     <None Include="Assets\Resources\shader\vertexColorGlowFIVE.shader" />
+     <None Include="Assets\Resources\shader\vertexColor.shader" />
+     <None Include="Assets\Resources\shader\vertexColorMultiply.shader" />
+     <None Include="Assets\ex2D\Core\Shaders\SpriteBlendNoZTest.shader" />
+     <None Include="Assets\ex2D\Core\Shaders\SpriteBlend.shader" />
+     <None Include="Assets\Resources\shader\vertexColorGUI.shader" />
+ <Reference Include="ex2D.Runtime">
+ <HintPath>Assets\ex2D\Core\ex2D.Runtime.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
