@@ -159,19 +159,16 @@ public class TouchStick : MonoBehaviour
         if (tapTimeWindow > 0){
             tapTimeWindow -= Time.deltaTime;
         }
-        else
-        {
+        else{
             tapCount = 0;
         }
  
-        if (count == 0)
-        {
+        if (count == 0){
             Restart();
         }
         else
         {
-            for (int i = 0; i < count; i++)
-            {
+            for (int i = 0; i < count; i++){
                 Touch touch = Input.GetTouch(i);
                 Vector2 guiTouchPos = touch.position - guiTouchOffset;
  
