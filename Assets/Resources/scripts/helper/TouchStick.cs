@@ -12,7 +12,7 @@ public class Boundary
  
  
 [RequireComponent(typeof(GUITexture))]
-public class Joystick : MonoBehaviour
+public class TouchStick : MonoBehaviour
 {
  
     public bool touchPad = false;
