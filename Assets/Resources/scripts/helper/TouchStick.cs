@@ -4,13 +4,6 @@ using System.Collections;
 using System.Collections.Generic;
  
  
-public class Boundary
-{
-    public Vector2 min = Vector2.zero;
-    public Vector2 max = Vector2.zero;
-}
- 
- 
 [RequireComponent(typeof(GUITexture))]
 public class TouchStick : MonoBehaviour
 {
@@ -154,7 +147,6 @@ public class TouchStick : MonoBehaviour
  
     public void Restart()
     {
-        gui.pixelInset = defaultRect;
         lastFingerId = -1;
         position = Vector2.zero;
         fingerDownPos = Vector2.zero;
