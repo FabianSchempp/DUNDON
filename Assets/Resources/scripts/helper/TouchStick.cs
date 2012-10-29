@@ -149,21 +149,14 @@ public class TouchStick : MonoBehaviour
         lastFingerId = -1;
         position = Vector2.zero;
         fingerDownPos = Vector2.zero;
- 
-        if (touchPad && fadeGUI)
-        {
-            gui.color = new Color(gui.color.r, gui.color.g, gui.color.b, 0.025f);
-        }
     }
  
  
-    private void Update()
-    {
+    private void Update(){
  
         int count = Input.touchCount;
  
-        if (tapTimeWindow > 0)
-        {
+        if (tapTimeWindow > 0){
             tapTimeWindow -= Time.deltaTime;
         }
         else
